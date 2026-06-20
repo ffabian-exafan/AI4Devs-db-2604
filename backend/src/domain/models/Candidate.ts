@@ -68,7 +68,8 @@ export class Candidate {
             candidateData.resumes = {
                 create: this.resumes.map(resume => ({
                     filePath: resume.filePath,
-                    fileType: resume.fileType
+                    fileType: resume.fileType,
+                    uploadDate: resume.uploadDate ?? new Date()
                 }))
             };
         }

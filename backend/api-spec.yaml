@@ -2,7 +2,11 @@ openapi: 3.0.0
 info:
   title: AI4Devs Candidate API
   version: 1.0.0
-  description: API for managing candidate data in the AI4Devs recruitment system.
+  description: |
+    API for managing candidate data in the AI4Devs recruitment system.
+    Data model aligned with ERD entities: Company, Employee, Position,
+    InterviewFlow, InterviewStep, InterviewType, Candidate, Application, Interview.
+    Candidate endpoints remain the primary public API surface.
 paths:
   /candidates:
     post:
